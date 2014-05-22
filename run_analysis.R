@@ -60,5 +60,6 @@ meltedData <- melt(subDataRaw, id.vars = c("Subject", "Activity"))
 # Reshape into table by getting mean for each unique Subject/Activity pair
 meansData <- dcast(meltedData, Subject+ Activity ~ variable, mean)
 
-# Write final means table to csv file and save
-write.csv(file="GCD.Final.Means.csv", meansData)
+# Write final means table to comma-separated text file 
+# (Due to issues with uploading csv files on Coursera)
+write.table(file="GCD.Final.Means.txt", meansData, sep = ",")
