@@ -15,6 +15,8 @@ Output from the script will be saved in your current working directory as `GCD.F
 
 Due to the complexity of the column names, capital letters were used to distinguish the start of each word.
 
+Only variables coding raw data from the accelerometer and gyroscope were included in this final dataset. 
+
 The output will include the following columns:
 
 * **Subject:** factor variable with a unique number for each subject.
